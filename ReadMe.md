@@ -9,5 +9,5 @@ To run the application follow the following steps:
 Swagger url - http://localhost:1234/user-service/swagger-ui.html
 ### Implementation notes
 For this example I have implemented some features for the user-service. Other services are shown in the architecture in the bookstore.drawio file. 
-The architecture file can be opened at https://app.diagrams.net/. The whole spplication is setuped via docker. The docker image is build via maven.
+The architecture file can be opened at https://app.diagrams.net/. The whole application is setuped via docker. The docker image is build via maven.
 For the different microservices we'll use different db schemas. I haven't used much spring security for simplicity.
