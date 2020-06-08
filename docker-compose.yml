@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+
+# DB services
+  mongodb:
+    image: mongo:3.3
+    ports:
+     - 27017:27017
+    volumes:
+     - /var/lib/jenkins/workspace/mongodb:/data/db
+ 
+  user-service:
+    image: user-service
+    ports:
+     - 1234:1234
+    links:
+     - mongodb:mongo-service
+    environment:
+      SPRING_APPLICATION_NAME: user-service
